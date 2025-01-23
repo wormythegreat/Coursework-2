@@ -3,13 +3,13 @@ from math import sqrt
 
 #Use from part 2
 #These are not right
-eq1 = -123
-eq2 = -12
-eq3 = -1
+eq1 = -150
+eq2 = -90
+eq3 = -40
 eq4 = 0
-eq5 = 1
-eq6 = 12
-eq7 = 123
+eq5 = 40
+eq6 = 90
+eq7 = 150
 
 #####     E = 1/2mv^2 + V(s)   #####
 

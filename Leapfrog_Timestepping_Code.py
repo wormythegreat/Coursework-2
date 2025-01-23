@@ -85,6 +85,4 @@ def leapfrog_method(S_0, V_0, h, stop_time):
 
 
 
-leapfrog_method(1, 0, 0.1, 100)
-
 
