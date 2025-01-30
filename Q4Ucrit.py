@@ -25,3 +25,5 @@ E_crit = V(eq2)
 #Rearranging for U
 
 U_crit = sqrt((2/m)*(E_crit-V(eq1)))
+
+print("U_crit:",U_crit)
