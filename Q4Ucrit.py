@@ -5,11 +5,11 @@ from math import sqrt
 #These are not right
 eq1 = -143.47473211748283
 eq2 = -79.16886756825691
-eq3 = -40
-eq4 = 0
-eq5 = 40
-eq6 = 90
-eq7 = 150
+# eq3 = -40
+# eq4 = 0
+# eq5 = 40
+# eq6 = 90
+# eq7 = 150
 
 #####     E = 1/2mv^2 + V(s)   #####
 
