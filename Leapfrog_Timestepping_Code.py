@@ -50,7 +50,10 @@ def leapfrog_timestep(S_nm1, S_n, V_nm1, V_n, h):
 
 
 
-def leapfrog_method(S_0, V_0, h, stop_time):
+def leapfrog_method(S_0, V_0, h, stop_time, file_name, colors):
+    file_name = str(file_name)
+    #adds an option to be able to name the graph
+
     #uses the leapfrog method to compute and plot a numerical solution for s and v
 
     #function parameters:
@@ -76,11 +79,21 @@ def leapfrog_method(S_0, V_0, h, stop_time):
         S[n+1], V[n+1] = leapfrog_timestep(S[n-1], S[n], V[n-1], V[n], h)
     #uses leapfrog method for every other timestep until stop_time is reached
 
-    plt.axhline(y=0, color="0.0")
-    plt.plot(t, S, label="Position")
-    plt.plot(t, V, label="Velocity")
-    plt.legend(fontsize=9)
-    plt.show()
+    if colors == "b":
+        plt.axhline(y=0, color="0.0")
+        plt.plot(t, S, label="Position", color="b")
+        plt.plot(t, V, label="Velocity", color="r")
+        plt.legend(fontsize=9)
+        plt.savefig(file_name)
+        plt.clf()
+
+    else:
+        plt.axhline(y=0, color="0.0")
+        plt.plot(t, S, label="Position")
+        plt.plot(t, V, label="Velocity")
+        plt.legend(fontsize=9)
+        plt.savefig(file_name)
+        plt.clf()
     #plot both position and velocity against time
 
 
